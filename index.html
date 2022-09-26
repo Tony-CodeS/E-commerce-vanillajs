@@ -1,0 +1,103 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> SNEAKER'S</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="nav-bar">
+        <div class="left-panel"> <h1> SNEAKER</h1></div>
+        <div class="middle-panel">
+            <ul>
+                <li> <a href="#">Collections </a></li>
+                <li> <a href="#"> Men </a></li>
+                <li><a  href="#"> Women </a></li>
+                <li> <a href="#">About</a></li>
+                <li> <a href="#">Contact</a> </li>
+            </ul>
+        </div>
+        <div class="right-panel">
+           
+            <div>
+                 <svg width="22" height="20"  id="icon" xmlns="http://www.w3.org/2000/svg"><path d="M20.925 3.641H3.863L3.61.816A.896.896 0 0 0 2.717 0H.897a.896.896 0 1 0 0 1.792h1l1.031 11.483c.073.828.52 1.726 1.291 2.336C2.83 17.385 4.099 20 6.359 20c1.875 0 3.197-1.87 2.554-3.642h4.905c-.642 1.77.677 3.642 2.555 3.642a2.72 2.72 0 0 0 2.717-2.717 2.72 2.72 0 0 0-2.717-2.717H6.365c-.681 0-1.274-.41-1.53-1.009l14.321-.842a.896.896 0 0 0 .817-.677l1.821-7.283a.897.897 0 0 0-.87-1.114ZM6.358 18.208a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm10.015 0a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm2.021-7.243-13.8.81-.57-6.341h15.753l-1.383 5.53Z" fill="#69707D" fill-rule="nonzero"/></svg>
+                 <Span > <sup id="cimg"> </sup></Span></div>
+           <div class="customer-img" > </div> 
+        </div>
+    </section>
+
+
+    <section class="Hero">
+        <div>
+        <div class="image" id="main-image">
+            <img src="./images/image-product-1-thumbnail.jpg" class="imgx" id="banner">
+        </div>
+            <!-- <img src="./images/image-product-1.jpg" width="400" height="400"> -->
+        <div class="thumbnail">
+            <div class="dot"><img id="main-image" src="./images/image-product-1-thumbnail.jpg" alt="" class="dot1" width="100%" height="100%" onclick="changeImage('./images/image-product-1-thumbnail.jpg')"></div>
+            <div class ="thumbnailXX"> <img src="./images/image-product-2-thumbnail.jpg" class="dot1" alt=""  width="100%" height="100%"  onclick="changeImage('./images/image-product-2-thumbnail.jpg')"></div>
+            <div class="thumbnailXX"> <img src="./images/image-product-3-thumbnail.jpg" class="dot1" alt="" width="100%" height="100%"  onclick="changeImage('./images/image-product-3-thumbnail.jpg')"> </div>
+            <div class="thumbnailXX"><img src="./images/image-product-4-thumbnail.jpg" class="dot1" alt="" width="100%" height="100%" onclick="changeImage('./images/image-product-4-thumbnail.jpg')"> </div>
+        </div>
+        </div>
+        <div class="description">
+            <div >
+                 <p  id="cv"> sneaker company</p>
+                <h1 class="fall"> Fall Limited Sneakers </h1>
+            </div>
+            <div class="detail">
+             <p>
+                this low profile sneakers are your perfect casual wear companion.
+                Featuring a durable rubber outer-sole, they'll withstand everything 
+                the weather can offer.
+             </p>
+             <div><h2 style="display:inline; margin:15px"> $125.00</h2> <span> <button class="btn1"> 50%</button></span></div>
+            <!-- <h2> $125.00</h2> <span> <button class="btn1"> 50%</button></span> -->
+            <p style="text-decoration:line-through;"> $250.00</p>
+            <div class="flex-btn">
+                <div><button class="btn2" onclick="decrease()" id="btn2">-</button><button  class="btn3"  id="btn3">0</button><button  onclick="increase()" class="btn4">+</button></div>
+                <button id="add-cart-btn"> Add to cart</button>
+            </div>
+            </div>
+        </div>
+    </section>
+
+
+    <div id="alert" >
+        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+        <div>
+           
+            <p> Cart</p>
+            <hr>
+            <p> Your Cart is Empty</p>
+        </div>
+      </div>
+
+
+      
+    <div id="alert">
+        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+        <div>
+           
+            <p> Cart</p>
+            <hr>
+            <div style="display:flex ;">
+                <div style="width:50px ; height:50px;"> <img src="./images/image-product-3.jpg" width="100%" height="100%" ></div>
+                <div> <p> Fall Limited Edition Sneakers</p>
+                $125 &times; 3 = $375.00</div>
+            </div>
+        </div>
+      </div>
+
+
+
+<p>tthyhyhhthththth</p>
+<p>vghggggfffghfghh</p>
+
+
+
+    <script src="index.js"></script>
+</body>
+</html>
